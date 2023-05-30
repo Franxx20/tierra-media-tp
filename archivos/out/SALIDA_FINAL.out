@@ -1,6 +1,6 @@
 Usuario [nombre=Frodo, preferencia=Aventura, monedas=23, tiempoDisponible=8.0]
-lugares a visitar= [Bosque Negro, Mordor]
-monedasAGastar= 23, duracionTravesia= 7.0
+lugares a visitar= [Abismo de Helm, Moria, Bosque Negro]
+monedasAGastar= 18, duracionTravesia= 8.0
 
 Usuario [nombre=Galadriel, preferencia=Paisaje, monedas=100, tiempoDisponible=5.0]
 lugares a visitar= [Erebor, Abismo de Helm]
@@ -11,6 +11,6 @@ lugares a visitar= [Lothlórien, La Comarca]
 monedasAGastar= 36, duracionTravesia= 7.5
 
 Usuario [nombre=Elrond, preferencia=Aventura, monedas=100, tiempoDisponible=100.0]
-lugares a visitar= [Bosque Negro, Mordor, Moria, Lothlórien, La Comarca, Minas Tirith, Abismo de Helm, Erebor]
-monedasAGastar= 79, duracionTravesia= 24.0
+lugares a visitar= [Bosque Negro, Mordor, Moria, Lothlórien, La Comarca, Minas Tirith, Abismo de Helm, Erebor, Moria, Bosque Negro, Minas Tirith, La Comarca]
+monedasAGastar= 100, duracionTravesia= 39.0
 

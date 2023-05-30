@@ -9,7 +9,7 @@ import tierraMediaTP.ObjectTierraMedia;
 public abstract class PromocionRaw extends ObjectTierraMedia{
 
 	protected int cantidad;
-	protected List<String> lugares = new ArrayList<>();
+	protected List<String> lugares ;
 
 	public PromocionRaw(int cantidad, List<String> lugares) {
 		this.cantidad = cantidad;

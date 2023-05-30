@@ -16,8 +16,7 @@ public class GeneradorSugerencias {
     private List<Oferta> ofertas;
     private Map<String, Atraccion> mapaLugarAtraccion;
 
-    public GeneradorSugerencias(List<Oferta> ofertas,
-                                Map<String, Atraccion> mapaLugarAtraccion) {
+    public GeneradorSugerencias(List<Oferta> ofertas, Map<String, Atraccion> mapaLugarAtraccion) {
         this.ofertas = ofertas;
         this.mapaLugarAtraccion = mapaLugarAtraccion;
     }
@@ -37,50 +36,103 @@ public class GeneradorSugerencias {
 
         System.out.println("Bienvenido/a " + nombreUsuario + "!");
 
-        while (pasadas < 2) {
+        boolean ban;
+        do {
+            ban = false;
+            lugaresYaSugeridos.clear();
+            pasadas = 0;
+            preferidas = true;
+            while (pasadas < 2) {
 
-            for (Oferta oferta : ofertas) {
-                boolean yaSeOferto = false, cupoDisponible = true;
+                for (Oferta oferta : ofertas) {
+                    boolean yaSeOferto = false, cupoDisponible = true;
 
-                for (String lugar : oferta.getLugares()) {
-                    if (lugaresYaSugeridos.contains(lugar))
-                        yaSeOferto = true;
-                    if (!mapaLugarAtraccion.get(lugar).tieneCuposDisponibles())
-                        cupoDisponible = false;
-                }
-
-                costoAPagar = oferta.getCostoFinal();
-                tiempoAGastar = oferta.getDuracion();
-                if (oferta.esAdecuadaPara(preferenciaUsuario) == preferidas && !yaSeOferto
-                        && costoAPagar <= monedasUsuario && tiempoAGastar <= tiempoDisponibleUsuario
-                        && cupoDisponible) {
-                    System.out.println(oferta);
-                    System.out.println("Aceptar? s/n");
-                    String input;
-                    input = validarInput(scanner);
-                    if (esAceptado(input)) {
-                        System.out.println("Has aceptado!");
-                        monedasUsuario -= costoAPagar;
-                        tiempoDisponibleUsuario -= tiempoAGastar;
-                        for (String lugar : oferta.getLugares()) {
-                            lugaresYaSugeridos.add(lugar);
-                            lugaresAceptados.add(lugar);
-                            mapaLugarAtraccion.put(lugar, mapaLugarAtraccion.get(lugar).gastarCupo());
-                        }
-                    }
-
-                }
-                if (costoAPagar < monedasUsuario && tiempoAGastar < tiempoDisponibleUsuario) {
                     for (String lugar : oferta.getLugares()) {
-                        lugaresYaSugeridos.add(lugar);
+                        if (lugaresYaSugeridos.contains(lugar)) yaSeOferto = true;
+                        if (!mapaLugarAtraccion.get(lugar).tieneCuposDisponibles()) cupoDisponible = false;
+
                     }
+
+                    costoAPagar = oferta.getCostoFinal();
+                    tiempoAGastar = oferta.getDuracion();
+
+
+                    if (monedasUsuario >= oferta.getCostoFinal() && tiempoDisponibleUsuario >= tiempoAGastar) {
+                        ban = true;
+                    }
+
+
+                    if (oferta.esAdecuadaPara(preferenciaUsuario) == preferidas && !yaSeOferto && costoAPagar <= monedasUsuario && tiempoAGastar <= tiempoDisponibleUsuario && cupoDisponible) {
+                        System.out.println(oferta);
+                        System.out.println("Aceptar? s/n");
+                        String input;
+                        input = validarInput(scanner);
+                        if (esAceptado(input)) {
+                            System.out.println("Has aceptado!");
+                            monedasUsuario -= costoAPagar;
+                            tiempoDisponibleUsuario -= tiempoAGastar;
+                            for (String lugar : oferta.getLugares()) {
+                                lugaresYaSugeridos.add(lugar);
+                                lugaresAceptados.add(lugar);
+                                mapaLugarAtraccion.put(lugar, mapaLugarAtraccion.get(lugar).gastarCupo());
+                            }
+                        }
+
+                    }
+
                 }
 
+                pasadas++;
+                preferidas = false;
             }
 
-            pasadas++;
-            preferidas = false;
-        }
+        } while (ban == true);
+//
+//        while (pasadas < 2) {
+//
+//            for (Oferta oferta : ofertas) {
+//                boolean yaSeOferto = false, cupoDisponible = true;
+//
+//                for (String lugar : oferta.getLugares()) {
+//                    if (lugaresYaSugeridos.contains(lugar))
+//                        yaSeOferto = true;
+//                    if (!mapaLugarAtraccion.get(lugar).tieneCuposDisponibles())
+//                        cupoDisponible = false;
+//                }
+//
+//                costoAPagar = oferta.getCostoFinal();
+//                tiempoAGastar = oferta.getDuracion();
+//                if (oferta.esAdecuadaPara(preferenciaUsuario) == preferidas && !yaSeOferto
+//                        && costoAPagar <= monedasUsuario && tiempoAGastar <= tiempoDisponibleUsuario
+//                        && cupoDisponible) {
+//                    System.out.println(oferta);
+//                    System.out.println("Aceptar? s/n");
+//                    String input;
+//                    input = validarInput(scanner);
+//                    if (esAceptado(input)) {
+//                        System.out.println("Has aceptado!");
+//                        monedasUsuario -= costoAPagar;
+//                        tiempoDisponibleUsuario -= tiempoAGastar;
+//                        for (String lugar : oferta.getLugares()) {
+//                            lugaresYaSugeridos.add(lugar);
+//                            lugaresAceptados.add(lugar);
+//                            mapaLugarAtraccion.put(lugar, mapaLugarAtraccion.get(lugar).gastarCupo());
+//                        }
+//                    }
+//
+//                }
+//                if (costoAPagar < monedasUsuario && tiempoAGastar < tiempoDisponibleUsuario) {
+//                    for (String lugar : oferta.getLugares()) {
+//                        lugaresYaSugeridos.add(lugar);
+//                    }
+//                }
+//
+//            }
+//
+//            pasadas++;
+//            preferidas = false;
+//        }
+
 
         tiempoAGastar = (usuario.getTiempo() - tiempoDisponibleUsuario);
         costoAPagar = (usuario.getMonedas() - monedasUsuario);
