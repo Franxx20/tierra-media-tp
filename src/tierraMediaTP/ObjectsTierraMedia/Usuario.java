@@ -2,7 +2,7 @@ package tierraMediaTP.ObjectsTierraMedia;
 
 import tierraMediaTP.ObjectTierraMedia;
 
-public class Usuario extends ObjectTierraMedia{
+public class Usuario implements ObjectTierraMedia {
 
 	private String nombre;
 	private TipoAtraccion preferencia;

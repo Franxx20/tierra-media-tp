@@ -1,17 +1,16 @@
 package tierraMediaTP.ObjectsTierraMedia;
 
-import java.util.ArrayList;
+import tierraMediaTP.ObjectTierraMedia;
+
 import java.util.List;
 import java.util.Map;
 
-import tierraMediaTP.ObjectTierraMedia;
-
-public abstract class PromocionRaw extends ObjectTierraMedia{
+public abstract class PromocionRaw implements ObjectTierraMedia {
 
 	protected int cantidad;
 	protected List<String> lugares ;
 
-	public PromocionRaw(int cantidad, List<String> lugares) {
+	protected PromocionRaw(int cantidad, List<String> lugares) {
 		this.cantidad = cantidad;
 		this.lugares = lugares;
 	}

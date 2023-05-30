@@ -1,13 +1,13 @@
 package tierraMediaTP.Archivos;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 import tierraMediaTP.ObjectTierraMedia;
 import tierraMediaTP.ObjectsTierraMedia.PromocionCombo;
 import tierraMediaTP.ObjectsTierraMedia.PromocionPlana;
 import tierraMediaTP.ObjectsTierraMedia.PromocionPorcentual;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class ArchivoPromociones extends ArchivoEntrada {
 
@@ -16,19 +16,17 @@ public class ArchivoPromociones extends ArchivoEntrada {
 	}
 	
 	@Override
-	public void procedimientoLectura(ArrayList<ObjectTierraMedia> lista, Scanner scanner) {
+	public void procedimientoLectura(List<ObjectTierraMedia> lista, Scanner scanner) {
 		
 		enum TipoPromocion{
 			PER,ABS,AXB;
 		}
 		
-		int cant = scanner.nextInt();
-		scanner.nextLine();
-		for (int i = 0; i < cant; i++) {
+		while(scanner.hasNext()) {
 			String[] campos = scanner.nextLine().split(" ");
 			int j = 0;
 			TipoPromocion tipo = TipoPromocion.valueOf(campos[j++]);
-			int cantidad = Integer.valueOf(campos[j++]);
+			int cantidad = Integer.parseInt(campos[j++]);
 			List<String> lugares = new ArrayList<>();
 			while (j < campos.length) {
 				lugares.add(campos[j++].replace('-', ' '));

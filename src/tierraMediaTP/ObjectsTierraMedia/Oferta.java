@@ -1,10 +1,10 @@
 package tierraMediaTP.ObjectsTierraMedia;
 
-import java.util.List;
-
 import tierraMediaTP.ObjectTierraMedia;
 
-public class Oferta extends ObjectTierraMedia implements Comparable<Oferta>{
+import java.util.List;
+
+public class Oferta implements Comparable<Oferta>, ObjectTierraMedia {
 
 	protected List<String> lugares;
 	protected double duracion;
@@ -29,17 +29,17 @@ public class Oferta extends ObjectTierraMedia implements Comparable<Oferta>{
 
 	@Override
 	public int compareTo(Oferta o) {
-		
-		double cmp = lugares.size() - o.lugares.size();
-		if(cmp == 0 || (lugares.size()>1 && o.lugares.size()>1)) {
-			cmp = this.precioConDescuento - o.precioConDescuento;
-			if(cmp == 0) {
-				cmp = this.duracion - o.duracion;
-				if(cmp == 0) return 0;
+
+		double resultado = (double)lugares.size() - o.lugares.size();
+		if(resultado == 0 || (lugares.size()>1 && o.lugares.size()>1)) {
+			resultado = (double)this.precioConDescuento - o.precioConDescuento;
+			if(resultado == 0) {
+				resultado = this.duracion - o.duracion;
+				if(resultado == 0) return 0;
 			}
 		}
 		
-		return (cmp < 0)? -1 : 1;
+		return (resultado < 0)? -1 : 1;
 	}
 
 	public boolean esAdecuadaPara(TipoAtraccion preferenciaUsuario) {

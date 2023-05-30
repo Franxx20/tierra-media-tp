@@ -1,27 +1,18 @@
 package tierraMediaTP;
 
+import tierraMediaTP.ObjectsTierraMedia.*;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Scanner;
-
-import tierraMediaTP.ObjectsTierraMedia.Atraccion;
-import tierraMediaTP.ObjectsTierraMedia.Oferta;
-import tierraMediaTP.ObjectsTierraMedia.PromocionCombo;
-import tierraMediaTP.ObjectsTierraMedia.PromocionPlana;
-import tierraMediaTP.ObjectsTierraMedia.PromocionPorcentual;
-import tierraMediaTP.ObjectsTierraMedia.TipoAtraccion;
-import tierraMediaTP.ObjectsTierraMedia.Usuario;
+import java.util.*;
 
 public class ArchivoEnum {
 
 	public enum TipoArchivo {
 		USUARIOS {
 			@Override
-			public void procedimientoLectura(ArrayList<ObjectTierraMedia> lista, Scanner scanner) {
+			public void procedimientoLectura(List<ObjectTierraMedia> lista, Scanner scanner) {
 				int cant = scanner.nextInt();
 				for (int i = 0; i < cant; i++) {
 					lista.add(new Usuario(scanner.next().replace('-', ' '), TipoAtraccion.valueOf(scanner.next()), scanner.nextInt(),
@@ -31,7 +22,7 @@ public class ArchivoEnum {
 		},
 		ATRACCIONES {
 			@Override
-			public void procedimientoLectura(ArrayList<ObjectTierraMedia> lista, Scanner scanner) {
+			public void procedimientoLectura(List<ObjectTierraMedia> lista, Scanner scanner) {
 				int cant = scanner.nextInt();
 				for (int i = 0; i < cant; i++) {
 					lista.add(new Atraccion(scanner.next().replace('-', ' '), scanner.nextInt(),
@@ -41,7 +32,7 @@ public class ArchivoEnum {
 		},
 		PROMOCIONES {
 			@Override
-			public void procedimientoLectura(ArrayList<ObjectTierraMedia> lista, Scanner scanner) {
+			public void procedimientoLectura(List<ObjectTierraMedia> lista, Scanner scanner) {
 				
 				enum TipoPromocion{
 					PER,ABS,AXB;
@@ -53,7 +44,7 @@ public class ArchivoEnum {
 					String[] campos = scanner.nextLine().split(" ");
 					int j = 0;
 					TipoPromocion tipo = TipoPromocion.valueOf(campos[j++]);
-					int cantidad = Integer.valueOf(campos[j++]);
+					int cantidad = Integer.parseInt(campos[j++]);
 					List<String> lugares = new ArrayList<>();
 					while (j < campos.length) {
 						lugares.add(campos[j++].replace('-', ' '));
@@ -69,8 +60,8 @@ public class ArchivoEnum {
 		},
 		SALIDA_FINAL{
 			@Override
-			public ArrayList<ObjectTierraMedia> procedimiento(List<ObjectTierraMedia> datosUsuarios,
-					List<Oferta> datosTravesia) {
+			public List<ObjectTierraMedia> procedimiento(List<ObjectTierraMedia> datosUsuarios,
+														 List<Oferta> datosTravesia) {
 
 				File fileName = new File("archivos/out/" + this.name() + ".out");
 				try (PrintWriter printer = new PrintWriter(fileName);) {
@@ -86,15 +77,15 @@ public class ArchivoEnum {
 				} catch (FileNotFoundException e) {
 					e.printStackTrace();
 				}
-				return null;
+				return Collections.emptyList();
 
 			}
 		};
 
-		public ArrayList<ObjectTierraMedia> procedimiento(List<ObjectTierraMedia> datosUsuarios,
+		public List<ObjectTierraMedia> procedimiento(List<ObjectTierraMedia> datosUsuarios,
 				List<Oferta> datosTravesia){
 			
-			ArrayList<ObjectTierraMedia> lista = new ArrayList<>();
+			List<ObjectTierraMedia> lista = new ArrayList<>();
 			File fileName = new File("archivos/in/" + this.name() + ".in");
 			try (Scanner scanner = new Scanner(fileName);) {
 
@@ -109,8 +100,9 @@ public class ArchivoEnum {
 			return lista;
 			
 		}
-		
-		public void procedimientoLectura(ArrayList<ObjectTierraMedia> lista, Scanner scanner) {
+		public void procedimientoLectura(List<ObjectTierraMedia> lista, Scanner scanner) {
+			// No hace nada porque es un enum para la salida final del archivo. Cuando ya ha sido leída toda la información pertinente.
+			throw new UnsupportedOperationException();
 		}
 		
 	}
@@ -122,11 +114,11 @@ public class ArchivoEnum {
 	}
 
 	///proceso lectura
-	public ArrayList<ObjectTierraMedia> procesar() {
+	public List<ObjectTierraMedia> procesar() {
 		return this.tipoDeArchivo.procedimiento(null,null);
 	}
 	//proceso escritura
-	public ArrayList<ObjectTierraMedia> procesar(List<ObjectTierraMedia> datosUsuarios,
+	public List<ObjectTierraMedia> procesar(List<ObjectTierraMedia> datosUsuarios,
 			List<Oferta> datosTravesia) {
 		return this.tipoDeArchivo.procedimiento(datosUsuarios,datosTravesia);
 	}

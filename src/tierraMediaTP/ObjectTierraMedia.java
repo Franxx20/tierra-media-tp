@@ -1,5 +1,5 @@
 package tierraMediaTP;
 
-public abstract class ObjectTierraMedia {
+public interface ObjectTierraMedia {
 
 }

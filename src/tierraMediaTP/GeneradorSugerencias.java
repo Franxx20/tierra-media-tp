@@ -1,15 +1,11 @@
 package tierraMediaTP;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
-
 import tierraMediaTP.ObjectsTierraMedia.Atraccion;
 import tierraMediaTP.ObjectsTierraMedia.Oferta;
 import tierraMediaTP.ObjectsTierraMedia.TipoAtraccion;
 import tierraMediaTP.ObjectsTierraMedia.Usuario;
+
+import java.util.*;
 
 public class GeneradorSugerencias {
 
@@ -22,7 +18,7 @@ public class GeneradorSugerencias {
     }
 
     public Oferta generarSugerencia(Usuario usuario, Scanner scanner) {
-        HashSet<String> lugaresYaSugeridos = new HashSet<>();
+        Set<String> lugaresYaSugeridos = new HashSet<>();
         List<String> lugaresAceptados = new ArrayList<>();
 
         String nombreUsuario = usuario.getNombre();
@@ -31,11 +27,10 @@ public class GeneradorSugerencias {
         double tiempoDisponibleUsuario = usuario.getTiempo();
         boolean preferidas = true;
         int pasadas = 0;
-        double tiempoAGastar;
+        double tiempoDisponible;
         int costoAPagar;
 
         System.out.println("Bienvenido/a " + nombreUsuario + "!");
-
         boolean ban;
         do {
             ban = false;
@@ -45,7 +40,8 @@ public class GeneradorSugerencias {
             while (pasadas < 2) {
 
                 for (Oferta oferta : ofertas) {
-                    boolean yaSeOferto = false, cupoDisponible = true;
+                    boolean yaSeOferto = false;
+                    boolean cupoDisponible = true;
 
                     for (String lugar : oferta.getLugares()) {
                         if (lugaresYaSugeridos.contains(lugar)) yaSeOferto = true;
@@ -54,15 +50,15 @@ public class GeneradorSugerencias {
                     }
 
                     costoAPagar = oferta.getCostoFinal();
-                    tiempoAGastar = oferta.getDuracion();
+                    tiempoDisponible = oferta.getDuracion();
 
 
-                    if (monedasUsuario >= oferta.getCostoFinal() && tiempoDisponibleUsuario >= tiempoAGastar) {
+                    if (monedasUsuario >= oferta.getCostoFinal() && tiempoDisponibleUsuario >= tiempoDisponible) {
                         ban = true;
                     }
 
 
-                    if (oferta.esAdecuadaPara(preferenciaUsuario) == preferidas && !yaSeOferto && costoAPagar <= monedasUsuario && tiempoAGastar <= tiempoDisponibleUsuario && cupoDisponible) {
+                    if (oferta.esAdecuadaPara(preferenciaUsuario) == preferidas && !yaSeOferto && costoAPagar <= monedasUsuario && tiempoDisponible <= tiempoDisponibleUsuario && cupoDisponible) {
                         System.out.println(oferta);
                         System.out.println("Aceptar? s/n");
                         String input;
@@ -70,7 +66,7 @@ public class GeneradorSugerencias {
                         if (esAceptado(input)) {
                             System.out.println("Has aceptado!");
                             monedasUsuario -= costoAPagar;
-                            tiempoDisponibleUsuario -= tiempoAGastar;
+                            tiempoDisponibleUsuario -= tiempoDisponible;
                             for (String lugar : oferta.getLugares()) {
                                 lugaresYaSugeridos.add(lugar);
                                 lugaresAceptados.add(lugar);
@@ -86,55 +82,9 @@ public class GeneradorSugerencias {
                 preferidas = false;
             }
 
-        } while (ban == true);
-//
-//        while (pasadas < 2) {
-//
-//            for (Oferta oferta : ofertas) {
-//                boolean yaSeOferto = false, cupoDisponible = true;
-//
-//                for (String lugar : oferta.getLugares()) {
-//                    if (lugaresYaSugeridos.contains(lugar))
-//                        yaSeOferto = true;
-//                    if (!mapaLugarAtraccion.get(lugar).tieneCuposDisponibles())
-//                        cupoDisponible = false;
-//                }
-//
-//                costoAPagar = oferta.getCostoFinal();
-//                tiempoAGastar = oferta.getDuracion();
-//                if (oferta.esAdecuadaPara(preferenciaUsuario) == preferidas && !yaSeOferto
-//                        && costoAPagar <= monedasUsuario && tiempoAGastar <= tiempoDisponibleUsuario
-//                        && cupoDisponible) {
-//                    System.out.println(oferta);
-//                    System.out.println("Aceptar? s/n");
-//                    String input;
-//                    input = validarInput(scanner);
-//                    if (esAceptado(input)) {
-//                        System.out.println("Has aceptado!");
-//                        monedasUsuario -= costoAPagar;
-//                        tiempoDisponibleUsuario -= tiempoAGastar;
-//                        for (String lugar : oferta.getLugares()) {
-//                            lugaresYaSugeridos.add(lugar);
-//                            lugaresAceptados.add(lugar);
-//                            mapaLugarAtraccion.put(lugar, mapaLugarAtraccion.get(lugar).gastarCupo());
-//                        }
-//                    }
-//
-//                }
-//                if (costoAPagar < monedasUsuario && tiempoAGastar < tiempoDisponibleUsuario) {
-//                    for (String lugar : oferta.getLugares()) {
-//                        lugaresYaSugeridos.add(lugar);
-//                    }
-//                }
-//
-//            }
-//
-//            pasadas++;
-//            preferidas = false;
-//        }
+        } while (ban);
 
-
-        tiempoAGastar = (usuario.getTiempo() - tiempoDisponibleUsuario);
+        tiempoDisponible = (usuario.getTiempo() - tiempoDisponibleUsuario);
         costoAPagar = (usuario.getMonedas() - monedasUsuario);
 
 //		System.out.println("RESUMEN ITINERARIO");
@@ -142,7 +92,7 @@ public class GeneradorSugerencias {
 //		System.out.println("monedasAGastar= " + costoAPagar + ", duracionTravesia= " + (usuario.getTiempo() - tiempoDisponibleUsuario));
 //		System.out.println();
 
-        return new Oferta(lugaresAceptados, tiempoAGastar, costoAPagar, costoAPagar, null);
+        return new Oferta(lugaresAceptados, tiempoDisponible, costoAPagar, costoAPagar, null);
 
     }
 

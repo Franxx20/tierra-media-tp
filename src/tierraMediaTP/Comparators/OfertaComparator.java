@@ -1,8 +1,8 @@
 package tierraMediaTP.Comparators;
 
-import java.util.Comparator;
-
 import tierraMediaTP.ObjectsTierraMedia.Oferta;
+
+import java.util.Comparator;
 
 public class OfertaComparator implements Comparator<Oferta>{
 

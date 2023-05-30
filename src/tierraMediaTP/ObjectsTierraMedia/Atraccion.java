@@ -8,7 +8,7 @@ public class Atraccion extends Oferta{
 	private int cupo;
 	
 	public Atraccion(String nombre, int costo, double tiempoRequerido, int cupo, TipoAtraccion tipo) {
-		super(new ArrayList<String>(Arrays.asList(nombre)),tiempoRequerido,costo,costo,tipo);
+		super(new ArrayList<>(Arrays.asList(nombre)),tiempoRequerido,costo,costo,tipo);
 		this.cupo = cupo;
 	}
 
@@ -18,6 +18,7 @@ public class Atraccion extends Oferta{
 				+ cupo + ", tipo=" + this.tiposAtraccionIncluidos + "]";
 	}
 
+	@Override
 	public int getCostoFinal() {
 		return this.precioOriginal;
 	}

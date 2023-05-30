@@ -1,6 +1,6 @@
 Usuario [nombre=Frodo, preferencia=Aventura, monedas=23, tiempoDisponible=8.0]
-lugares a visitar= [Abismo de Helm, Moria, Bosque Negro]
-monedasAGastar= 18, duracionTravesia= 8.0
+lugares a visitar= [Bosque Negro, Mordor]
+monedasAGastar= 23, duracionTravesia= 7.0
 
 Usuario [nombre=Galadriel, preferencia=Paisaje, monedas=100, tiempoDisponible=5.0]
 lugares a visitar= [Erebor, Abismo de Helm]
