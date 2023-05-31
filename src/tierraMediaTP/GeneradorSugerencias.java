@@ -34,7 +34,6 @@ public class GeneradorSugerencias {
         boolean ban;
         do {
             ban = false;
-            lugaresYaSugeridos.clear();
             pasadas = 0;
             preferidas = true;
             while (pasadas < 2) {
@@ -53,7 +52,8 @@ public class GeneradorSugerencias {
                     tiempoDisponible = oferta.getDuracion();
 
 
-                    if (monedasUsuario >= oferta.getCostoFinal() && tiempoDisponibleUsuario >= tiempoDisponible) {
+                    if (!yaSeOferto && cupoDisponible && 
+                    		monedasUsuario >= oferta.getCostoFinal() && tiempoDisponibleUsuario >= tiempoDisponible) {
                         ban = true;
                     }
 
