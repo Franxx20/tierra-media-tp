@@ -17,16 +17,6 @@ public class Resolucion {
         List<ObjectTierraMedia> datosAtracciones;
         List<ObjectTierraMedia> datosPromociones;
 
-//		ArchivoEnum archivo;
-//		archivo = new ArchivoEnum(TipoArchivo.USUARIOS);
-//		datosUsuarios = archivo.procesar();
-//		
-//		archivo = new ArchivoEnum(TipoArchivo.ATRACCIONES);
-//		datosAtracciones = archivo.procesar();
-//		
-//		archivo = new ArchivoEnum(TipoArchivo.PROMOCIONES);
-//		datosPromociones = archivo.procesar();
-
         ArchivoEntrada archivo;
         archivo = new ArchivoUsuarios();
         datosUsuarios = archivo.leer();
@@ -45,9 +35,7 @@ public class Resolucion {
         GeneradorSugerencias generadorSugerencias = new GeneradorSugerencias(listaOfertas, mapaLugarAtraccion);
         ArchivoSalida archivoSalida = new ArchivoSalida();
         archivoSalida.guardar(datosUsuarios, ejecutarSugerencias(datosUsuarios, generadorSugerencias));
-//		archivo = new ArchivoEnum(TipoArchivo.SALIDA_FINAL);
-//		archivo.procesar(datosUsuarios,ejecutarSugerencias(datosUsuarios, generadorSugerencias));
-        System.out.println("Programa terminado");
+		System.out.println("Programa terminado");
 
 
     }
