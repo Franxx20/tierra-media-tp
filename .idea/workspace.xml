@@ -5,69 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="235bb0c1-bac3-4d71-bae6-c577d032debf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/0655ed370f7b03243bdfc1f4480de1feeaf23174" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0eaa2e9c7c7f3c37b463dd4e58da3ae298283b64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/13b91958536c4ba4a047dc9e11ea965f53d2efd3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c048ab7b65c4843219ba19a5ca3f161646e25ff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/24f43b648a2807bc654051fa1318235639d6237f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2b849443d39ee9c70dd56928c6bbbf01b99d0f69" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2ebe1bdd8f3c8552c527d9622b638436740c9bbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/38caf58b3fdb1e41dd76b3448b217710e3929b4f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/5477e3e36b2d4874f7c27560ca35f6e142c2d4a2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/56fa1474994f127b8f4360750156b9113512dd81" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/65a896491997c696ec35d32820e3c76c11959244" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/b/7b9ed0f074009d4d16eeb45d5b620a155422d552" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/86d65aedf2a8dc2b35671b117cd4d63740cbb7f9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b9212e36f9146e23135b3fe9350e7133691c2d1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec3e2c61eb8acf93f8a630281576bc66cd4fb67" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/f/bf324f8a4a9c7d303f6350b29b59990604df1e5f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/cc3d65ce02cb45d675aea8ff3c82a13a1eef9ef2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e6927a5d47255fa2116f78ea7ccd63959d555307" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f00fb85013ed8ba4b60b711f9e2ea394988178db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f684220bb5a8192c98c05fbc7bc6d02e65b37f04" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/6/0655ed370f7b03243bdfc1f4480de1feeaf23174" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/e/0eaa2e9c7c7f3c37b463dd4e58da3ae298283b64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/3/13b91958536c4ba4a047dc9e11ea965f53d2efd3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/c/1c048ab7b65c4843219ba19a5ca3f161646e25ff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/4/24f43b648a2807bc654051fa1318235639d6237f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/b/2b849443d39ee9c70dd56928c6bbbf01b99d0f69" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/e/2ebe1bdd8f3c8552c527d9622b638436740c9bbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/8/38caf58b3fdb1e41dd76b3448b217710e3929b4f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/4/5477e3e36b2d4874f7c27560ca35f6e142c2d4a2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/6/56fa1474994f127b8f4360750156b9113512dd81" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/5/65a896491997c696ec35d32820e3c76c11959244" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/b/7b9ed0f074009d4d16eeb45d5b620a155422d552" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/6/86d65aedf2a8dc2b35671b117cd4d63740cbb7f9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/b/8b9212e36f9146e23135b3fe9350e7133691c2d1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/e/8ec3e2c61eb8acf93f8a630281576bc66cd4fb67" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/f/bf324f8a4a9c7d303f6350b29b59990604df1e5f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/c/cc3d65ce02cb45d675aea8ff3c82a13a1eef9ef2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/6/e6927a5d47255fa2116f78ea7ccd63959d555307" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/0/f00fb85013ed8ba4b60b711f9e2ea394988178db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/6/f684220bb5a8192c98c05fbc7bc6d02e65b37f04" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivos/in/ATRACCIONES.in" beforeDir="false" afterPath="$PROJECT_DIR$/archivos/in/ATRACCIONES.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivos/in/PROMOCIONES.in" beforeDir="false" afterPath="$PROJECT_DIR$/archivos/in/PROMOCIONES.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivos/in/USUARIOS.in" beforeDir="false" afterPath="$PROJECT_DIR$/archivos/in/USUARIOS.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivos/out/SALIDA_FINAL.out" beforeDir="false" afterPath="$PROJECT_DIR$/archivos/out/SALIDA_FINAL.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/ArchivoEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/ArchivoEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/Archivos/ArchivoAtracciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/Archivos/ArchivoAtracciones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/Archivos/ArchivoEntrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/Archivos/ArchivoEntrada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/Archivos/ArchivoPromociones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/Archivos/ArchivoPromociones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/Archivos/ArchivoSalida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/Archivos/ArchivoSalida.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/Archivos/ArchivoUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/Archivos/ArchivoUsuarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/Comparators/AtraccionComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/Comparators/AtraccionComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/Comparators/OfertaComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/Comparators/OfertaComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/GeneradorSugerencias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/GeneradorSugerencias.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/ObjectTierraMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/ObjectTierraMedia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/ObjectsTierraMedia/Atraccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/ObjectsTierraMedia/Atraccion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/ObjectsTierraMedia/Oferta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/ObjectsTierraMedia/Oferta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/ObjectsTierraMedia/PromocionRaw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/ObjectsTierraMedia/PromocionRaw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/ObjectsTierraMedia/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/ObjectsTierraMedia/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/Resolucion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/Resolucion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +23,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="99746e39-7828-4719-a2fe-4d6bc0a7c2cf" />
+        <option name="url" value="https://github.com/Franxx20/tierra-media-tp.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -93,19 +44,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultPlantUmlFileTemplate": "UML Class",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/pilum/Facultad/proyecto_Turismo_Tierra_Media",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "settings.sync"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/pilum/Facultad/proyecto_Turismo_Tierra_Media&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Resolucion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tierraMediaTP.Resolucion" />

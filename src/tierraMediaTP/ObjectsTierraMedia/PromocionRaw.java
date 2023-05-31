@@ -9,6 +9,7 @@ public abstract class PromocionRaw implements ObjectTierraMedia {
 
 	protected int cantidad;
 	protected List<String> lugares ;
+	protected List<Atraccion> atracciones;
 
 	protected PromocionRaw(int cantidad, List<String> lugares) {
 		this.cantidad = cantidad;
