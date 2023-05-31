@@ -5,13 +5,14 @@ import tierraMediaTP.ObjectTierraMedia;
 import java.util.List;
 import java.util.Map;
 
-public abstract class PromocionRaw implements ObjectTierraMedia {
+public abstract class PromocionRaw extends Oferta implements ObjectTierraMedia {
 
 	protected int cantidad;
 	protected List<String> lugares ;
 	protected List<Atraccion> atracciones;
 
 	protected PromocionRaw(int cantidad, List<String> lugares) {
+		super();
 		this.cantidad = cantidad;
 		this.lugares = lugares;
 	}

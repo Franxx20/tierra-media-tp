@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="235bb0c1-bac3-4d71-bae6-c577d032debf" name="Changes" comment="">
+    <list default="true" id="235bb0c1-bac3-4d71-bae6-c577d032debf" name="Changes" comment="agregada la lista de Atracciones en PromocionRaw">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/Archivos/ArchivoPromociones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/Archivos/ArchivoPromociones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/Comparators/AtraccionComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/GeneradorSugerencias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/GeneradorSugerencias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/ObjectsTierraMedia/Atraccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/ObjectsTierraMedia/Atraccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/ObjectsTierraMedia/Oferta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/ObjectsTierraMedia/Oferta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/ObjectsTierraMedia/PromocionRaw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/ObjectsTierraMedia/PromocionRaw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tierraMediaTP/Resolucion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tierraMediaTP/Resolucion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +30,18 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -44,19 +58,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/pilum/Facultad/proyecto_Turismo_Tierra_Media&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultPlantUmlFileTemplate": "UML Class",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/pilum/Facultad/proyecto_Turismo_Tierra_Media",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "settings.sync"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Resolucion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tierraMediaTP.Resolucion" />
@@ -73,6 +87,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Resolucion" />
+        <item itemvalue="Application.Resolucion" />
+        <item itemvalue="Application.Resolucion" />
+        <item itemvalue="Application.Resolucion" />
         <item itemvalue="Application.Resolucion" />
       </list>
     </recent_temporary>

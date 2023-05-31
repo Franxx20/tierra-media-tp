@@ -4,14 +4,17 @@ import tierraMediaTP.ObjectTierraMedia;
 import tierraMediaTP.ObjectsTierraMedia.PromocionCombo;
 import tierraMediaTP.ObjectsTierraMedia.PromocionPlana;
 import tierraMediaTP.ObjectsTierraMedia.PromocionPorcentual;
+import tierraMediaTP.ObjectsTierraMedia.Atraccion;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class ArchivoPromociones extends ArchivoEntrada {
 
-	public ArchivoPromociones() {
+	private Map<String,Atraccion> mapaAtracciones;
+	public ArchivoPromociones(Map<String, Atraccion> mapaLugarAtraccion) {
 		super("PROMOCIONES");
 	}
 	

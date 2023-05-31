@@ -70,7 +70,7 @@ public class GeneradorSugerencias {
                             for (String lugar : oferta.getLugares()) {
                                 lugaresYaSugeridos.add(lugar);
                                 lugaresAceptados.add(lugar);
-                                mapaLugarAtraccion.put(lugar, mapaLugarAtraccion.get(lugar).gastarCupo());
+                                mapaLugarAtraccion.get(lugar).gastarCupo();
                             }
                         }
 

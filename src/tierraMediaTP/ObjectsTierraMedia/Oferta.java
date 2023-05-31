@@ -21,6 +21,10 @@ public class Oferta implements Comparable<Oferta>, ObjectTierraMedia {
 		this.tiposAtraccionIncluidos = tiposAtraccionIncluidos;
 	}
 
+	public Oferta() {
+
+	}
+
 	@Override
 	public String toString() {
 		return "Oferta [lugares=" + lugares + ", duracion=" + duracion + ", precioOriginal="

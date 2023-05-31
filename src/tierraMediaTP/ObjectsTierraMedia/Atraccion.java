@@ -31,9 +31,8 @@ public class Atraccion extends Oferta{
 		return this.tiposAtraccionIncluidos;
 	}
 
-	public Atraccion gastarCupo() {
+	public void gastarCupo() {
 		this.cupo--;
-		return this;
 	}
 	
 	public boolean tieneCuposDisponibles() {

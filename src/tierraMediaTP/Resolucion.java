@@ -21,13 +21,15 @@ public class Resolucion {
         archivo = new ArchivoUsuarios();
         datosUsuarios = archivo.leer();
 
+
         archivo = new ArchivoAtracciones();
         datosAtracciones = archivo.leer();
 
-        archivo = new ArchivoPromociones();
+        Map<String, Atraccion> mapaLugarAtraccion = generarMapaLugarAtraccion(datosAtracciones);
+
+        archivo = new ArchivoPromociones(mapaLugarAtraccion);
         datosPromociones = archivo.leer();
 
-        Map<String, Atraccion> mapaLugarAtraccion = generarMapaLugarAtraccion(datosAtracciones);
 
         List<Oferta> listaOfertas = listaPromocionesToListaOfertas(datosPromociones, mapaLugarAtraccion);
         agregarAtraccionesAListaOfertasYOrdenar(listaOfertas, mapaLugarAtraccion);
